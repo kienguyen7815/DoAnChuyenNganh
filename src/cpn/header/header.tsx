@@ -105,7 +105,6 @@ const Header = () => {
 					<path d="M8.25 19.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0ZM15.75 6.75a.75.75 0 0 0-.75.75v11.25c0 .087.015.17.042.248a3 3 0 0 1 5.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 0 0-3.732-10.104 1.837 1.837 0 0 0-1.47-.725H15.75Z" />{" "}
 					<path d="M19.5 19.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z" />{" "}
 				</svg>
-				
 			),
 		},
 		{
@@ -122,7 +121,6 @@ const Header = () => {
 					<path d="m3.265 10.602 7.668 4.129a2.25 2.25 0 0 0 2.134 0l7.668-4.13 1.37.739a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.71 0l-9.75-5.25a.75.75 0 0 1 0-1.32l1.37-.738Z" />{" "}
 					<path d="m10.933 19.231-7.668-4.13-1.37.739a.75.75 0 0 0 0 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 0 0 0-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 0 1-2.134-.001Z" />{" "}
 				</svg>
-				
 			),
 		},
 		{
@@ -143,22 +141,14 @@ const Header = () => {
 
 	const renderContent = () => {
 		switch (selectedMenu) {
-			case "Home":
-				return <DashBoard />;
-			case "Profile":
-				return <Profile />;
-			case "New Order":
-				return <Order />;
-			case "Order Problem":
-				return <OrderProblem />;
-			case "Shipment":
-				return <Shipment />;
-			case "Revenue":
-				return <Revenue />;
-			case "Manage":
-				return <Manage />;
-			default:
-				return <DashBoard />;
+			case "Home": return <DashBoard />;
+			case "Profile": return <Profile />;
+			case "New Order": return <Order />;
+			case "Order Problem": return <OrderProblem />;
+			case "Shipment": return <Shipment />;
+			case "Revenue": return <Revenue />;
+			case "Manage": return <Manage />;
+			default: return <DashBoard />;
 		}
 	};
 
